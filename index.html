@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kalindu Wijerathna Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">ABOUT</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s; padding-left: 5px; padding-right: 5px;">PROJECTS</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">CONTACT</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <div>
+            <h1>Kalindu Wijerathna</h1>
+            <h2>Networking Enthusiast / DevOps Developer / </br>Full Stack Developer </h2>
+            <div id="menu">
+                <a onclick="showabout()">about</a>
+                <a onclick="showwork()">work</a>
+                <a onclick="showcontact()">contact</a>
+            </div>
+            <table>
+                    <tr>
+                        <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social" href="https://github.com/KalinduWijerathna"><i class="fab fa-github"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" href="https://www.facebook.com/profile.php?id=100086643133605"><i class="fab fa-facebook"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social" href="https://www.hackerrank.com/dashboard"><i class="fab fa-hackerrank"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social" href="https://people.ce.pdn.ac.lk/students/e19/446/"><i class="fab fa-elementor	"></i></a></td>
+                    </tr>
+            </table>
+            <h2>(UG)Bsc. Engineering, University of Peradeniya</h2>
+        </div>
+        <div class="image-container">
+            <img class="oval-image image1 active" src="./assets/me1.png" alt="Oval Image 1">
+            <img class="oval-image image2" src="./assets/me2.png" alt="Oval Image 2">
+            <img class="oval-image image3" src="./assets/me3.jpg" alt="Oval Image 3">
+        </div>  
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>Projects</h1>
+        <section>
+            
+            <h2>EF528 Short Movie Project</h2>
+            <p>
+                Reality Check: Surviving the First Year of University
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/O9uhekenxj0?si=PatOCCVz0fczEAz3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <!-- <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+            </div>
+            <button class="btn_one">button 1</button>
+            <button class="btn_two">button 2</button> -->
+            <div class="card-container">
+            <div class="project-card">
+                <img class="project-image" src="./assets/3yp.jpg" alt="Project 1">
+                <div class="project-content">
+                    <div class="project-title"><h3>3YP: Pera Swarm Modular Robots</h3></div>
+                    <div class="project-description"><p>Swarm Capable Modular Robots: For Multipurpose Uses</br><a href="https://cepdnaclk.github.io/e19-3yp-Pera-Swarm-Modular-Robots/">For More Info</a></br><i>Currently On Going Project</i></p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="project-card">
+                <img class="project-image" src="./assets/226.png" alt="Project 2">
+                <div class="project-content">
+                    <div class="project-title"><h3>PeraLink: Tailor Made Social Media Site</h3></div>
+                    <div class="project-description"><p>PeraLink is a social media site that aims to connect people and foster meaningful connections in the digital world.</br><a href="https://cepdnaclk.github.io/e19-co226-database-for-a-social-media-site/">For More Info</a></p>
+
+                    </div>
+                </div>
+            </div>
+    
+            <div class="project-card">
+                <img class="project-image" src="./assets/227.png" alt="Project 3">
+                <div class="project-content">
+                    <div class="project-title"><h3>Digital Content Management System for IT Center UoP</h3></div>
+                    <div class="project-description"><p>The Digital Signage CMS for the IT Center,UOP is a gateway to a transformative realm. Prepare to embark on a journey that redefines conventional communication and ignites interactive engagement.<a href="https://cepdnaclk.github.io/e19-co227-digital-signage-content-management-system/">For More info</a></p>
+
+                    </p></div>
+                </div>
+            </div>
+            </div>
+
+        </section>
+    </div>
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>About Me</h1>
+            <section>
+                <h2>"Ayubowan!, Hi!,&emsp; I'm Kalindu Wijerathna"</h2>
+                <p>
+                     "A Networking Enthusiast, DevOps Developer, and Full Stack Developer. <br/>
+                     By day, I love to design and optimize computer systems and streamline development processes. <br/>
+                     By night, I'm a fingerstyle guitar enthusiast who sings a bit. Welcome to my world of tech and tunes!"
+
+                </p>
+                <p>
+                    I'm currently studying as a 3rd year undergraduate at Faculty of Engineering University of Peradeniya(Specialization: Computer Eng.)
+                </p>
+            </section>
+            <section>
+                <h2>Education</h2>
+                <p>Secondary Education(From Grade 6-13): Dharamaraja College, Kandy</p>
+                <ul>
+                    <li>A/Ls: Physical Science Stream(Combined Maths, Physics, Chemistry): A A A</li>
+                    <li>O/Ls: (with Information Technology, Accounting & Business Studies): 9-As</li>
+                </ul>
+
+                <p>Primary Education(From Grade 1-5): St.Anthoney's College, Katugastota</p>
+
+            </section>
+            <!-- <section>
+                <h2>skills</h2>
+                <p>
+                    i do eveything ;)
+                </p>
+            </section> -->
+        </div>
+          <div id="contact_container" class="container">
+            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+            <h1>Contact</h1>
+            <section>
+                <h2>Contact Me</h2>
+                <p>
+                    <form>
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required><br>
+                        <textarea placeholder="your message" required rows="5"></textarea><br>
+                        <button class="btn_one">send</button>
+                    </form> 
+                </p>
+            </section>
+        </div>
+        <div id="footer">
+            © <a href="https://github.com/KalinduWijerathna">KalinduWijerathna</a>
+            <br/> 
+            inspired by <a href="https://imfunniee.github.io">imfunniee</a>
+        </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get all images
+            const images = document.querySelectorAll('.oval-image');
+
+            // Index of the currently active image
+            let currentIndex = 0;
+
+            // Function to show the next image
+            function showNextImage() {
+                images[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % images.length;
+                images[currentIndex].classList.add('active');
+            }
+
+            // Show the first image
+            images[currentIndex].classList.add('active');
+
+            // Set interval to change images every 5 seconds
+            setInterval(showNextImage, 5000);
+        });
+    </script>
+    
+</body>
+</html>

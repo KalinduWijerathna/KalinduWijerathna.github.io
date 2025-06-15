@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kalindu Wijerathna Portfolio</title>
+    <title>Kalindu Builds 🛠️</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/logo.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <div id="loading">
         <div id="spinner"></div>
@@ -25,138 +30,609 @@
         <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
     </div>
     <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">ABOUT</a>
-    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s; padding-left: 5px; padding-right: 5px;">PROJECTS</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn"
+        style="animation-delay:2.2s; padding-left: 5px; padding-right: 5px;">PROJECTS</a>
     <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">CONTACT</a>
     <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
-        <div>
-            <h1>Kalindu Wijerathna</h1>
-            <h2>Networking Enthusiast / DevOps Developer / </br>Full Stack Developer </h2>
+        <div class="intro-container">
+            <h1 id="name">Kalindu Wijerathna</h1>
+            <h2 id="titles">
+                Full Stack Software Engineer (Java|Springboot|React|Node)
+                </br> DevOps Engineer
+                </br> Networking, SDN & NLP Research Enthusiast
+            </h2>
             <div id="menu">
-                <a onclick="showabout()">about</a>
-                <a onclick="showwork()">work</a>
-                <a onclick="showcontact()">contact</a>
+                <a onclick="showabout()">About</a>
+                <a onclick="showwork()">Projects</a>
+                <a onclick="showcontact()">Contact</a>
             </div>
             <table>
-                    <tr>
-                        <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social" href="https://github.com/KalinduWijerathna"><i class="fab fa-github"></i></a></td>
-                        <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" href="https://www.facebook.com/profile.php?id=100086643133605"><i class="fab fa-facebook"></i></a></td>
-                        <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social" href="https://www.hackerrank.com/dashboard"><i class="fab fa-hackerrank"></i></a></td>
-                        <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social" href="https://people.ce.pdn.ac.lk/students/e19/446/"><i class="fab fa-elementor	"></i></a></td>
-                    </tr>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"
+                            href="https://github.com/KalinduWijerathna"><i class="fab fa-github"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"
+                            href="https://www.facebook.com/profile.php?id=100086643133605"><i
+                                class="fab fa-facebook"></i></a></td>
+                    <td><a href="./Certificates/CV.pdf" target="_blank" class="resume-icon" title="View Resume">
+                            <img src="./assets/resume-icon.svg" alt="Resume" />Resume
+                        </a>
+                    </td>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"
+                            href="https://www.hackerrank.com/dashboard"><i class="fab fa-hackerrank"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"
+                            href="https://people.ce.pdn.ac.lk/students/e19/446/"><i class="fab fa-elementor	"></i></a>
+                    </td>
+                </tr>
             </table>
-            <h2>(UG)Bsc. Engineering, University of Peradeniya</h2>
+            <h2 id="degree">(UG)Bsc.Eng(Hons) University of Peradeniya</br>
+                Specializing in Computer Engineering</h2>
         </div>
         <div class="image-container">
             <img class="oval-image image1 active" src="./assets/me1.png" alt="Oval Image 1">
             <img class="oval-image image2" src="./assets/me2.png" alt="Oval Image 2">
             <img class="oval-image image3" src="./assets/me3.jpg" alt="Oval Image 3">
-        </div>  
+        </div>
     </div>
     <div id="work_container" class="container">
-        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
-        <h1>Projects</h1>
+        <div class="about-header" onclick="closework()"><i class="fas fa-angle-right"></i>
+            <h2>Research & Projects</h2>
+        </div>
         <section>
-        
-
-            <!-- <div id="used">
-                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
-                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
-                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
-            </div>
-            <button class="btn_one">button 1</button>
-            <button class="btn_two">button 2</button> -->
             <div class="card-container">
-            <div class="project-card">
-                <img class="project-image" src="./assets/3yp.jpg" alt="Project 1">
-                <div class="project-content">
-                    <div class="project-title"><h3>3YP: Pera Swarm Modular Robots</h3></div>
-                    <div class="project-description"><p>Swarm Capable Modular Robots: For Multipurpose Uses</br><a href="https://cepdnaclk.github.io/e19-3yp-Pera-Swarm-Modular-Robots/">For More Info</a></br><i>Currently On Going Project</i></p>
+                <!-- Final Year Research Project -->
+                <div class="project-card">
+                    <img class="project-image" src="./assets/nlp-sdn.png" alt="Intent-Based SDN">
+                    <div class="project-content">
+                        <div class="project-title">
+                            <h3>NLP-Driven Intent-Based SDN Architecture</h3>
+                            <h4>Final Year Research</h4>
+                        </div>
+                        <div class="project-description">
+                            <p>Designing a layered architecture to interpret high-level intents using NLP for dynamic
+                                SDN configurations.<br>
+                                Includes automated topologies via Mininet/Containernet, ONOS integration with
+                                Grafana/Prometheus, and NLP server/API deployment.<br>
+                                NLP pipeline is driven by a multi-agentic RAG pipeline with a custom NER for Network
+                                Entity Recognition.
+                                <i>Dec 2024 – Present</i></br>
+                                🔗 <a
+                                    href="https://projects.ce.pdn.ac.lk/4yp/e19/NLP-Driven-IBN-Layered-Architecture-for-SDNs/"
+                                    target="_blank">Project Page</a><br>
+                                💻 <a
+                                    href="https://cepdnaclk.github.io/e19-4yp-NLP-Driven-IBN-Layered-Architecture-for-SDNs"
+                                    target="_blank">View on GitHub</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-    
-            <div class="project-card">
-                <img class="project-image" src="./assets/226.png" alt="Project 2">
-                <div class="project-content">
-                    <div class="project-title"><h3>PeraLink: Tailor Made Social Media Site</h3></div>
-                    <div class="project-description"><p>PeraLink is a social media site that aims to connect people and foster meaningful connections in the digital world.</br><a href="https://cepdnaclk.github.io/e19-co226-database-for-a-social-media-site/">For More Info</a></p>
 
+                <!-- Digital Signage System -->
+                <div class="project-card">
+                    <img class="project-image" src="./assets/digisignage.png" alt="Digital Signage">
+                    <div class="project-content">
+                        <div class="project-title">
+                            <h3>Digital Signage CMS System for IT Center UoP</h3>
+                            <h4>3 Member Group</h4>
+                        </div>
+                        <div class="project-description">
+                            <p>Centralized CMS for automated display content. Used React, TypeScript, PHP APIs with
+                                GitHub CI/CD.<br>
+                                Replaced manual scheduling with dynamic, rule-based content display tailored for
+                                academic needs.<br>
+                                <i>Aug 2023 – Jan 2024</i></br>
+                                <i>Officially deployed – Jan 2024</i>
+
+                                </br>
+                                🔗 <a
+                                    href="https://cepdnaclk.github.io/e19-co227-digital-signage-content-management-system"
+                                    target="_blank">Project Page</a><br>
+                                💻 <a
+                                    href="https://github.com/cepdnaclk/e19-co227-digital-signage-content-management-system"
+                                    target="_blank">View on GitHub</a><br>
+                                🏅 <a href="./Certificates/IT_Center_Digital_Signage_System.pdf" target="_blank">
+                                    Certificate of Appreciation from University</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-    
-            <div class="project-card">
-                <img class="project-image" src="./assets/227.png" alt="Project 3">
-                <div class="project-content">
-                    <div class="project-title"><h3>Digital Content Management System for IT Center UoP</h3></div>
-                    <div class="project-description"><p>The Digital Signage CMS for the IT Center,UOP is a gateway to a transformative realm. Prepare to embark on a journey that redefines conventional communication and ignites interactive engagement.<a href="https://cepdnaclk.github.io/e19-co227-digital-signage-content-management-system/">For More info</a></p>
 
-                    </p></div>
+                <!-- Academetrix -->
+                <div class="project-card">
+                    <img class="project-image" src="./assets/Academetrix.png" alt="Academetrix">
+                    <div class="project-content">
+                        <div class="project-title">
+                            <h3>Academetrix: Student Result Management Portal</h3>
+                            <h4>8 Member Group</h4>
+                        </div>
+                        <div class="project-description">
+                            <p>
+                                Developed a secure, role-based full-stack student result portal using <strong>Java
+                                    (Spring Boot)</strong>, <strong>MySQL</strong>, and <strong>Tailwind
+                                    CSS</strong>.<br>
+                                Built RESTful APIs for authentication and result management, with role-specific access
+                                for admins, staff, and students.<br>
+                                Deployed on <strong>AWS EC2</strong> using <strong>Jenkins CI/CD</strong>,
+                                <strong>Terraform</strong> for infrastructure, and <strong>Ansible</strong> for server
+                                provisioning.<br>
+                                <i>Apr 2024 – Dec 2024</i><br><br>
+                                💻 <a href="https://github.com/cepdnaclk/e19-co328-Student-Result-Management-System"
+                                    target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            </div>
 
+                <!-- Pera Link -->
+                <div class="project-card">
+                    <img class="project-image" src="./assets/peralink.png" alt="Pera Link">
+                    <div class="project-content">
+                        <div class="project-title">
+                            <h3>Pera Link – Social Platform</h3>
+                            <h4>3 Member Group</h4>
+
+                        </div>
+                        <div class="project-description">
+                            <p>Social media tailor-made for Pera University community, with backend in Express.js &
+                                MySQL and frontend in Vue.js. Earlier this year our original undergraduate project idea
+                                of this was adopted by HackersClub UoP as the first long-term
+                                University-wide project involving all the faculties and batches.<br>
+                                <i>May 2023 – Aug 2023; </br>Lead DevOps – Dec 2024 – Present</i>
+                                </br>
+                                🔗 <a href="https://github.com/cepdnaclk/e19-co226-database-for-a-social-media-site"
+                                    target="_blank">Project Page</a><br>
+                                💻 <a href="https://cepdnaclk.github.io/e19-co226-database-for-a-social-media-site"
+                                    target="_blank">View on GitHub</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Digital Twin -->
+                <div class="project-card">
+                    <img class="project-image" src="./assets/digital-twin.png" alt="Digital Twin">
+                    <div class="project-content">
+                        <div class="project-title">
+                            <h3>Digital Twin of a Smart City Traffic Flow Intersection</h3>
+                            <h4>14 Member Group</h4>
+
+                        </div>
+                        <div class="project-description">
+                            <p>
+                                Developed a Digital Twin system to simulate and analyze real-time traffic flow at
+                                intersections using
+                                <strong>Apache Kafka</strong>, <strong>Unity-3D</strong>, <strong>Docker</strong>, and
+                                <strong>Kubernetes</strong>.<br>
+                                Designed and implemented core system architecture, focusing on scalable microservices
+                                and real-time data pipelines.<br>
+                                Led Kafka-based communication layer for synchronized sensor-to-simulator messaging and
+                                containerized services orchestrated via Kubernetes for deployment and scaling.<br>
+                                <i>Apr 2024 – Nov 2024</i>
+                                </br>
+                                💻 <a
+                                    href="https://github.com/cepdnaclk/e19-co326-Digital-Twin-of-Smart-City-Traffic-Flow-Intersection"
+                                    target="_blank">View on GitHub</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pera Swarm SCARA -->
+                <div class="project-card">
+                    <img class="project-image" src="./assets/scara.jpeg" alt="Pera Swarm SCARA">
+                    <div class="project-content">
+                        <div class="project-title">
+                            <h3>SCARA: Pera Swarm Modular Robots</h3>
+                            <h4>5 Member Group</h4>
+                        </div>
+                        <div class="project-description">
+                            <p>
+                            <p>
+                                Designed and developed a modular SCARA robotic arm as part of the long-running
+                                <strong>Pera Swarm</strong> initiative, focusing on swarm-capable, scalable robotic
+                                units.<br>
+                                Integrated <strong>Raspberry Pi Zero-W</strong> and <strong>ATtiny85</strong> for
+                                embedded control, and implemented full-stack support using <strong>MongoDB</strong>,
+                                <strong>Express.js</strong>, <strong>React.js</strong>, and
+                                <strong>Node.js</strong>.<br>
+                                Led the development of the database architecture and contributed to backend APIs and
+                                documentation, including user and engineering manuals.<br>
+                                <i>Part of Pera Swarm Project</i><br>
+                                <i>Oct 2023 - Jan 2024</i>
+                                </br>
+                                🔗 <a href="https://cepdnaclk.github.io/e19-3yp-Pera-Swarm-Modular-Robots/"
+                                    target="_blank">Project Page</a><br>
+                                💻 <a href="https://github.com/cepdnaclk/e19-3yp-Pera-Swarm-Modular-Robots/"
+                                    target="_blank">View on GitHub</a></br>
+                                📚 <a href="https://pera-swarm.ce.pdn.ac.lk/projects/" target="_blank">Pera Swarm
+                                    Research Projects</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Elective Recommender -->
+                <div class="project-card">
+                    <img class="project-image" src="./assets/ml.png" alt="Elective Recommender">
+                    <div class="project-content">
+                        <div class="project-title">
+                            <h3>Elective Course & Field Recommendation System</h3>
+                            <h4>5 Member Group</h4>
+                        </div>
+                        <div class="project-description">
+                            <p>Developed an intelligent Elective Course Recommendation System using machine learning
+                                models including SVM, LDA, and Multilayer Perceptron (MLP).<br>
+                                Designed and implemented the overall system architecture, and established a complete
+                                MLOps pipeline using <strong>ZenML</strong> for reproducible experimentation and
+                                streamlined model lifecycle management.<br>
+                                Deployed the solution on <strong>Google Cloud Platform</strong>, integrating model
+                                serving, storage, and performance monitoring.<br>
+                                Actively contributed to data preprocessing, training pipeline, evaluation metrics, and
+                                scalable deployment strategies.<br>
+                                <i>Mar 2024 – Aug 2024</i>
+                                </br>
+                                💻 <a
+                                    href="https://github.com/cepdnaclk/e19-co544-course-and-field-recommendation-system-based-on-student-results"
+                                    target="_blank">View on GitHub</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RISC-V Processor -->
+                <div class="project-card">
+                    <img class="project-image" src="./assets/riscv.png" alt="RISC-V CPU">
+                    <div class="project-content">
+                        <div class="project-title">
+                            <h3>8-bit Single Cycle RISC-V CPU</h3>
+                            <h4>2 Member Group</h4>
+                        </div>
+                        <div class="project-description">
+                            <p>Designed and implemented an 8-bit single-cycle CPU from scratch using
+                                <strong>Verilog</strong>, adhering to the <strong>RISC-V architecture</strong>.<br>
+                                Integrated key components such as the <strong>Arithmetic Logic Unit (ALU)</strong>,
+                                register file, control unit, and memory hierarchy, ensuring correct instruction decoding
+                                and execution.<br>
+                                <i>Jun 2023 – Aug 2023</i>
+                                </br>
+                                💻 <a href="https://github.com/inesha21/8-bit-single-cycle-computer-processor"
+                                    target="_blank">View on GitHub</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
     </div>
+
+
     <div id="about_container" class="container">
-            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
-            <h1>About Me</h1>
-            <section>
-                <h2>"Ayubowan!, Hi!,&emsp; I'm Kalindu Wijerathna"</h2>
-                <p>
-                     "A Networking Enthusiast, DevOps Developer, and Full Stack Developer. <br/>
-                     By day, I love to design and optimize computer systems and streamline development processes. <br/>
-                     By night, I'm a fingerstyle guitar enthusiast who sings a bit. Welcome to my world of tech and tunes!"
-
-                </p>
-                <p>
-                    I'm currently studying as a 3rd year undergraduate at Faculty of Engineering University of Peradeniya(Specialization: Computer Eng.)
-                </p>
-            </section>
-            <section>
-                <h2>Education</h2>
-                <p>Secondary Education(From Grade 6-13): Dharamaraja College, Kandy</p>
-                <ul>
-                    <li>A/Ls: Physical Science Stream(Combined Maths, Physics, Chemistry): A A A</li>
-                    <li>O/Ls: (with Information Technology, Accounting & Business Studies): 9-As</li>
-                </ul>
-
-                <p>Primary Education(From Grade 1-5): St.Anthoney's College, Katugastota</p>
-
-            </section>
-            <!-- <section>
-                <h2>skills</h2>
-                <p>
-                    i do eveything ;)
-                </p>
-            </section> -->
+        <div class="about-header" onclick="closeabout()"><i class="fas fa-angle-left"></i>
+            <h2>"Kalindu here — Ayubowan🙏!"</h2>
         </div>
-          <div id="contact_container" class="container">
-            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
-            <h1>Contact</h1>
-            <section>
-                <h2>Contact Me</h2>
-                <p>
-                    <form>
-                        <input type="text" placeholder="Name" required>
-                        <input type="email" placeholder="Email" required><br>
-                        <textarea placeholder="your message" required rows="5"></textarea><br>
-                        <button class="btn_one">send</button>
-                    </form> 
-                </p>
-            </section>
+        <section>
+            <p>
+                I'm a Passionate and Creative tech enthusiast with a strong work ethic, dedicated to building
+                intelligent,
+                scalable systems across the full stack and beyond.
+            </p>
+            <p class="about-titles">
+                Full Stack Software Engineer | DevOps Engineer | Networking, SDN, NLP Research Explorer.
+            </p>
+        </section>
+        <section>
+            <div class="education-entry">
+                <h3>BScEngHons in Computer Engineering</h3>
+                <span class="edu-duration">Mar 2021 – Present</span>
+                <p class="edu-institute">University of Peradeniya</p>
+                <p class="edu-detail">Current CGPA: 3.60 / 4.00</p>
+            </div>
+
+            <div class="education-entry">
+                <h3>GCE Advanced Level (A | A | A)</h3>
+                <span class="edu-duration">2019</span>
+                <p class="edu-institute">Dharmaraja College, Kandy</p>
+                <p class="edu-detail">Z-Score: 2.164</p>
+            </div>
+
+            <a class="education-entry" href="./Certificates/Cisco_Certified_Network_Associate_certificate.pdf"
+                target="_blank" title="View Certificate">
+                <h3>Cisco Certified Network Associate (CCNA 200-125)</h3>
+                <span class="edu-duration">2020</span>
+            </a>
+
+            <h2 class="specialization-heading">Specializations</h2>
+            <div class="specializations-list">
+
+                <a href="./Certificates/AWSCloudSolutionsArchitect.pdf" target="_blank" title="View Certificate"
+                    class="specialization-item">
+                    <img src="./assets/specialization-icon.svg" alt="Certificate Icon" />
+                    <p><strong>AWS Cloud Solutions Architect Professional Specialization</strong> (2024)</p>
+                    <span>AWS | Coursera — 4 Course Specialization</span>
+                </a>
+
+                <a href="./Certificates/Spring_FrameworkSpecialization.pdf" target="_blank" title="View Certificate"
+                    class="specialization-item">
+                    <img src="./assets/specialization-icon.svg" alt="Certificate Icon" />
+                    <p><strong>Java Spring Framework Specialization</strong> (2025)</p>
+                    <span>LearQuest | Coursera — 4 Course Specialization</span>
+                </a>
+
+                <a href="./Certificates/MetaFrontEndSpecialization.pdf" target="_blank" title="View Certificate"
+                    class="specialization-item">
+                    <img src="./assets/specialization-icon.svg" alt="Certificate Icon" />
+                    <p><strong>Meta Front-End Developer Certificate (React)</strong> (2025)</p>
+                    <span>Meta | Coursera — 9 Course Specialization</span>
+                </a>
+
+                <a href="./Certificates/ArchitectingWithGoogleKubernetesEngineSpecialization.pdf" target="_blank"
+                    title="View Certificate" class="specialization-item">
+                    <img src="./assets/specialization-icon.svg" alt="Certificate Icon" />
+                    <p><strong>Architecting with Google Kubernetes Engine Specialization</strong> (2025)</p>
+                    <span>Google | Coursera — 3 Course Specialization</span>
+                </a>
+
+                <a href="./Certificates/CKAD_Specialization.pdf" target="_blank" title="View Certificate"
+                    class="specialization-item">
+                    <img src="./assets/specialization-icon.svg" alt="Certificate Icon" />
+                    <p><strong>Certified Kubernetes Application Developer (CKAD)</strong> (2025)</p>
+                    <span>LearnKartS | Coursera — 3 Course Specialization</span>
+                </a>
+
+                <a href="./Certificates/AdvancedDiplomaInComputerNetworks_NPTEL-India_Alison.pdf" target="_blank"
+                    title="View Certificate" class="specialization-item">
+                    <img src="./assets/specialization-icon.svg" alt="Certificate Icon" />
+                    <p><strong>Advanced Diploma in Computer Networks & Internet Protocol</strong> (2024)</p>
+                    <span>NPTEL, India & Alison, Ireland</span>
+                </a>
+
+
+                <h2 class="certification-heading">Certifications</h2>
+                <div class="certifications-list">
+
+                    <a href="./Certificates/MachineLearning_UofStanford.pdf" target="_blank" title="View Certificate"
+                        class="certification-item">
+                        <p>Machine Learning – University of Stanford</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/GenerativePretrainedTransformers_UofGlasgow.pdf" target="_blank"
+                        title="View Certificate" class="certification-item">
+                        <p>Generative Pretrained Transformers – University of Glasgow</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/SoftwareDefinedNetworking_University-of-Chicago.pdf" target="_blank"
+                        title="View Certificate" class="certification-item">
+                        <p>Software Defined Networking – University of Chicago</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+
+                    <a href="./Certificates/ArchitectingWithGoogleKubernetesEngineWorkloads.pdf" target="_blank"
+                        title="View Certificate" class="certification-item">
+                        <p>Architecting with Google Kubernetes Engine: Workloads</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/ArchitectingWithGoogleKubernetesEngineProduction.pdf" target="_blank"
+                        title="View Certificate" class="certification-item">
+                        <p>Architecting with Google Kubernetes Engine: Production</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/GettingStartedGoogleKubernetesEngine.pdf" target="_blank"
+                        title="View Certificate" class="certification-item">
+                        <p>Getting Started with Google Kubernetes Engine</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/CKAD_KubernetesFundamentals.pdf" target="_blank" title="View Certificate"
+                        class="certification-item">
+                        <p>CKAD: Kubernetes Fundamentals</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/CKAD_AdvancedKubernetes.pdf" target="_blank" title="View Certificate"
+                        class="certification-item">
+                        <p>CKAD: Advanced Kubernetes</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/CKAD_ContainerAndContainerOrchestrationFundamentals.pdf" target="_blank"
+                        title="View Certificate" class="certification-item">
+                        <p>CKAD: Containers and Orchestration Fundamentals</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/KubernetesForAbsoluteBeginnersWithHandsOnLabs.pdf" target="_blank"
+                        title="View Certificate" class="certification-item">
+                        <p>Kubernetes for Absolute Beginners with Hands on Labs</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/DiplomaInDevOpsEngineering_Alison.pdf" target="_blank"
+                        title="View Certificate" class="certification-item">
+                        <p>Diploma in DevOps Engineering – Alison</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/Combinotorics-and-Algorithm-Design_XuetangX-Institute.pdf" target="_blank"
+                        title="View Certificate" class="certification-item">
+                        <p>Combinatorics and Algorithm Design – XuetangX</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/Spring_EcoSystemAndCore.pdf" target="_blank" title="View Certificate"
+                        class="certification-item">
+                        <p>Spring Ecosystem and Core</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/Spring_MVCSpringbootRestControllerspdf.pdf" target="_blank"
+                        title="View Certificate" class="certification-item">
+                        <p>Spring MVC and Spring Boot REST Controllers</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/Spring_CloudOverview.pdf" target="_blank" title="View Certificate"
+                        class="certification-item">
+                        <p>Spring Cloud Overview</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/Spring_DataRepositories.pdf" target="_blank" title="View Certificate"
+                        class="certification-item">
+                        <p>Spring Data Repositories</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/AWS_Workshop.pdf" target="_blank" title="View Certificate"
+                        class="certification-item">
+                        <p>AWS Workshop Builders Series</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/CloudEssentialsAWS.pdf" target="_blank" title="View Certificate"
+                        class="certification-item">
+                        <p>Cloud Essentials – AWS</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/ArchitectingSolutionsonAWS.pdf" target="_blank" title="View Certificate"
+                        class="certification-item">
+                        <p>Architecting Solutions on AWS</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/IntroductionToDesigningDataLakes_AWS.pdf" target="_blank"
+                        title="View Certificate" class="certification-item">
+                        <p>Introduction to Designing Data Lakes – AWS</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/ExamPrep_AwsCertifiedSolutionArchitect_AWS.pdf" target="_blank"
+                        title="View Certificate" class="certification-item">
+                        <p>Exam Prep: AWS Certified Solution Architect</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/IntroductionToCloudComputing_IBM.pdf" target="_blank"
+                        title="View Certificate" class="certification-item">
+                        <p>Introduction to Cloud Computing – IBM</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/DataAnalyticsBasics_IBM.pdf" target="_blank" title="View Certificate"
+                        class="certification-item">
+                        <p>Data Analytics Basics – IBM</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/IntroductionToLinux_TheLinuxFoundation.pdf" target="_blank"
+                        title="View Certificate" class="certification-item">
+                        <p>Introduction to Linux – The Linux Foundation</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/MetaIntroToFrontEndDevelopment.pdf" target="_blank" title="View Certificate"
+                        class="certification-item">
+                        <p>Meta: Intro to Front-End Development</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/MetaHtmlCssInDepth.pdf" target="_blank" title="View Certificate"
+                        class="certification-item">
+                        <p>Meta: HTML & CSS in Depth</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/MetaReactBasics.pdf" target="_blank" title="View Certificate"
+                        class="certification-item">
+                        <p>Meta: React Basics</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/MetaAdvancedReact.pdf" target="_blank" title="View Certificate"
+                        class="certification-item">
+                        <p>Meta: Advanced React</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/MetaPrinciplesOfUIUXDesign.pdf" target="_blank" title="View Certificate"
+                        class="certification-item">
+                        <p>Meta: Principles of UI/UX Design</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/MetaProgrammingWithJS.pdf" target="_blank" title="View Certificate"
+                        class="certification-item">
+                        <p>Meta: Programming with JavaScript</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/MetaVersionControl.pdf" target="_blank" title="View Certificate"
+                        class="certification-item">
+                        <p>Meta: Version Control</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/MetaFrontEndDeveloperCapstoneProject.pdf" target="_blank"
+                        title="View Certificate" class="certification-item">
+                        <p>Meta: Front-End Developer Capstone</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                    <a href="./Certificates/MetaCodingInterviewPreperation.pdf" target="_blank" title="View Certificate"
+                        class="certification-item">
+                        <p>Meta: Coding Interview Preparation</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+               
+                    <a href="./Certificates/ChatGPT_101.pdf" target="_blank" title="View Certificate"
+                        class="certification-item">
+                        <p>ChatGPT 101 – Certificate</p>
+                        <img src="./assets/certificate-icon.svg" alt="Certificate Icon" />
+                    </a>
+
+                </div>
+
+            </div>
+
+    </div>
+
+    </section>
+
+
+
+    </div>
+    <div id="contact_container" class="container">
+        <div class="contact-header" onclick="closecontact()"><i class="fas fa-angle-down"></i>
+            <h2>Let's Connect 🥂<div class="spacer"></div>
+                To Build Something Awesome</h2>
         </div>
-        <div id="footer">
-            © <a href="https://github.com/KalinduWijerathna">KalinduWijerathna</a>
-            <br/> 
-            inspired by <a href="https://imfunniee.github.io">imfunniee</a>
-        </div>
+        <section class="contact-details">
+            <p><strong>Email:</strong> <a href="mailto:wijerathnakalindu@gmail.com">wijerathnakalindu@gmail.com</a></p>
+            <p><strong>Location:</strong> Kandy, Sri Lanka</p>
+            <p><strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/kalinduwijerathna" target="_blank" rel="noopener noreferrer">
+                     linkedin.com/in/kalinduwijerathna
+                </a>
+            </p>
+        </section>
+    </div>
+    <div id="footer">
+        © <a href="https://github.com/KalinduWijerathna">KalinduWijerathna</a>
+        <br />
+        inspired by <a href="https://imfunniee.github.io">imfunniee</a>
+    </div>
     <script src="index.js" type="text/javascript"></script>
     <script src="particles.js"></script>
     <script src="app.js"></script>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             // Get all images
             const images = document.querySelectorAll('.oval-image');
 
@@ -177,6 +653,7 @@
             setInterval(showNextImage, 5000);
         });
     </script>
-    
+
 </body>
+
 </html>
